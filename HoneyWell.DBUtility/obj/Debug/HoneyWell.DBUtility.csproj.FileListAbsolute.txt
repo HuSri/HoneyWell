@@ -1,0 +1,4 @@
+D:\hbw\item\HoneyWell\HoneyWell.DBUtility\bin\Debug\HoneyWell.DBUtility.dll
+D:\hbw\item\HoneyWell\HoneyWell.DBUtility\bin\Debug\HoneyWell.DBUtility.pdb
+D:\hbw\item\HoneyWell\HoneyWell.DBUtility\obj\Debug\HoneyWell.DBUtility.dll
+D:\hbw\item\HoneyWell\HoneyWell.DBUtility\obj\Debug\HoneyWell.DBUtility.pdb

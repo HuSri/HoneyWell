@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://tempuri.org/AbstractTypes" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UploadFile_GoodsImg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FileByte" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFile_GoodsImgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadFile_GoodsImgResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="boolean" type="s:boolean" />
+    </s:schema>
+    <s:schema targetNamespace="http://tempuri.org/AbstractTypes">
+      <s:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <s:complexType name="StringArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="String" type="s:string" />
+            </s:sequence>
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UploadFile_GoodsImgSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFile_GoodsImg" />
+  </wsdl:message>
+  <wsdl:message name="UploadFile_GoodsImgSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFile_GoodsImgResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFile_GoodsImgHttpGetIn">
+    <wsdl:part name="FileByte" type="s1:StringArray" />
+    <wsdl:part name="fileName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFile_GoodsImgHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="UploadFile_GoodsImgHttpPostIn">
+    <wsdl:part name="FileByte" type="s1:StringArray" />
+    <wsdl:part name="fileName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UploadFile_GoodsImgHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:portType name="UploadSoap">
+    <wsdl:operation name="UploadFile_GoodsImg">
+      <wsdl:input message="tns:UploadFile_GoodsImgSoapIn" />
+      <wsdl:output message="tns:UploadFile_GoodsImgSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="UploadHttpGet">
+    <wsdl:operation name="UploadFile_GoodsImg">
+      <wsdl:input message="tns:UploadFile_GoodsImgHttpGetIn" />
+      <wsdl:output message="tns:UploadFile_GoodsImgHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="UploadHttpPost">
+    <wsdl:operation name="UploadFile_GoodsImg">
+      <wsdl:input message="tns:UploadFile_GoodsImgHttpPostIn" />
+      <wsdl:output message="tns:UploadFile_GoodsImgHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UploadSoap" type="tns:UploadSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadFile_GoodsImg">
+      <soap:operation soapAction="http://tempuri.org/UploadFile_GoodsImg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UploadSoap12" type="tns:UploadSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadFile_GoodsImg">
+      <soap12:operation soapAction="http://tempuri.org/UploadFile_GoodsImg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UploadHttpGet" type="tns:UploadHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="UploadFile_GoodsImg">
+      <http:operation location="/UploadFile_GoodsImg" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UploadHttpPost" type="tns:UploadHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="UploadFile_GoodsImg">
+      <http:operation location="/UploadFile_GoodsImg" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Upload">
+    <wsdl:port name="UploadSoap" binding="tns:UploadSoap">
+      <soap:address location="http://www.friendbetter.com:8082/Upload.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UploadSoap12" binding="tns:UploadSoap12">
+      <soap12:address location="http://www.friendbetter.com:8082/Upload.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UploadHttpGet" binding="tns:UploadHttpGet">
+      <http:address location="http://www.friendbetter.com:8082/Upload.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UploadHttpPost" binding="tns:UploadHttpPost">
+      <http:address location="http://www.friendbetter.com:8082/Upload.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

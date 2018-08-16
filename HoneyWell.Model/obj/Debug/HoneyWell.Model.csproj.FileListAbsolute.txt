@@ -1,0 +1,5 @@
+D:\hbw\item\HoneyWell\HoneyWell.Model\bin\Debug\HoneyWell.Model.dll
+D:\hbw\item\HoneyWell\HoneyWell.Model\bin\Debug\HoneyWell.Model.pdb
+D:\hbw\item\HoneyWell\HoneyWell.Model\obj\Debug\HoneyWell.Model.dll
+D:\hbw\item\HoneyWell\HoneyWell.Model\obj\Debug\HoneyWell.Model.pdb
+D:\hbw\item\HoneyWell\HoneyWell.Model\obj\Debug\HoneyWell.Model.csprojResolveAssemblyReference.cache

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78EE0384-1EE6-463D-AE38-D56FA0FF962F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HoneyWell.BLL</RootNamespace>
+    <AssemblyName>HoneyWell.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sys_Admin.cs" />
+    <Compile Include="Sys_Area.cs" />
+    <Compile Include="Sys_Cart.cs" />
+    <Compile Include="Sys_Coupon.cs" />
+    <Compile Include="Sys_Coupon_Details.cs" />
+    <Compile Include="Sys_Duty.cs" />
+    <Compile Include="Sys_Focus.cs" />
+    <Compile Include="Sys_Invoice.cs" />
+    <Compile Include="Sys_Logs.cs" />
+    <Compile Include="Sys_Menu.cs" />
+    <Compile Include="Sys_Orders.cs" />
+    <Compile Include="Sys_Product.cs" />
+    <Compile Include="Sys_Public.cs" />
+    <Compile Include="Sys_Receipt.cs" />
+    <Compile Include="Sys_Return.cs" />
+    <Compile Include="Sys_Shopping.cs" />
+    <Compile Include="Sys_Type.cs" />
+    <Compile Include="Sys_Users.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HoneyWell.COMM\HoneyWell.COMM.csproj">
+      <Project>{86a7162c-a7f3-4a5f-934b-fb2b2f67f3af}</Project>
+      <Name>HoneyWell.COMM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HoneyWell.DAL\HoneyWell.DAL.csproj">
+      <Project>{5cc2a6a3-0444-430a-a0b1-5075faa3a75d}</Project>
+      <Name>HoneyWell.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HoneyWell.Model\HoneyWell.Model.csproj">
+      <Project>{1f9b8660-666d-4147-85a7-7c891d4bfa47}</Project>
+      <Name>HoneyWell.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

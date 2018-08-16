@@ -1,0 +1,8 @@
+D:\hbw\item\HoneyWell\HoneyWell.COMM\bin\Debug\HoneyWell.COMM.dll
+D:\hbw\item\HoneyWell\HoneyWell.COMM\bin\Debug\HoneyWell.COMM.pdb
+D:\hbw\item\HoneyWell\HoneyWell.COMM\bin\Debug\HoneyWell.DBUtility.dll
+D:\hbw\item\HoneyWell\HoneyWell.COMM\bin\Debug\HoneyWell.DBUtility.pdb
+D:\hbw\item\HoneyWell\HoneyWell.COMM\obj\Debug\HoneyWell.COMM.csprojResolveAssemblyReference.cache
+D:\hbw\item\HoneyWell\HoneyWell.COMM\obj\Debug\HoneyWell.COMM.dll
+D:\hbw\item\HoneyWell\HoneyWell.COMM\obj\Debug\HoneyWell.COMM.pdb
+D:\hbw\item\HoneyWell\HoneyWell.COMM\bin\Debug\HoneyWell.COMM.dll.config

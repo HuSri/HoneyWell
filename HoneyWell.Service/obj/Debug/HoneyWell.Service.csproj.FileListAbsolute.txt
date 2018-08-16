@@ -1,0 +1,17 @@
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.Service.dll.config
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.Service.dll
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.Service.pdb
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.BLL.dll
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.COMM.dll
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.DAL.dll
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.DBUtility.dll
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.Model.dll
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\Newtonsoft.Json.dll
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.BLL.pdb
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.COMM.pdb
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.DAL.pdb
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.DBUtility.pdb
+D:\hbw\item\HoneyWell\HoneyWell.Service\bin\HoneyWell.Model.pdb
+D:\hbw\item\HoneyWell\HoneyWell.Service\obj\Debug\HoneyWell.Service.csprojResolveAssemblyReference.cache
+D:\hbw\item\HoneyWell\HoneyWell.Service\obj\Debug\HoneyWell.Service.dll
+D:\hbw\item\HoneyWell\HoneyWell.Service\obj\Debug\HoneyWell.Service.pdb

@@ -1,0 +1,18 @@
+/*************苹果四样式********************/
+@media only screen and (min-device-width: 100px) and (max-device-width:320px) and (max-device-height:568px) {}
+
+
+/*************高度小于568px的其他宽屏手机样式********************/
+@media only screen and (min-device-width:321px) and (max-device-height:568px) {}
+
+
+/*************高度大于568px的其他窄屏手机样式********************/
+@media only screen and (min-device-width: 100px) and (max-device-width:320px) and (min-device-height:568px) {}
+
+
+/*************高度大于568px的其他宽屏手机样式********************/
+@media only screen and (min-device-width:321px) and (min-device-height:568px) {}
+
+
+/*************苹果五样式********************/
+@media only screen and (device-width: 320px) and (device-height:568px) {}

@@ -1,0 +1,108 @@
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+a {
+	text-decoration: none;
+	color:#616161;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+ul, ol, li {
+	list-style: none;
+}
+em, i {
+	font-style: normal;
+}
+img {
+	border: none;
+}
+input, img {
+	vertical-align: middle;
+}
+html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Open Sans';
+}
+body {
+	margin: 0 auto;
+	width: 100%;
+	font-family: 'Open Sans';
+	font-size: 13px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.hedin{ display:none;}
+.showtxt{ display:block;}
+
+/*-------------左边菜单样式 start-------------------*/
+	.leftmune{min-height:100%; background:#f2f2f2; width:211px; border-right: 1px solid #e5e5e5; height:976px;}
+	.total{min-height:100%; background:#f2f2f2; width:211px; border-right: 1px solid #e5e5e5; }
+	.overall{width:210px;text-align: center;}
+	.borderl{border:2px solid rgb(11, 108, 188);float: left;height:30px; margin-left:-1px;}
+	.mainmenu{border: 1px solid #e5e5e5;height:35px;line-height:35px; border-top:none; border-right:none; width:209px; text-align:left;color:#616161;}
+	.mainmenu span{margin-left:20px;}
+	.submenu{ width:100%; border-bottom: 1px solid #e5e5e5; display:none;color:#616161;}
+	.submenu .second{ border-bottom: 1px dashed #e2e2e2;height: 38px;line-height:38px;text-align:left; background:#ffffff; }
+	.dashe{margin-left:30px;margin-right: 8px; width:12px;}
+	
+	.submenu .three{ /*display:none;*/}
+	.submenu .three li{ border-bottom: 1px dashed #e2e2e2;height: 35px;line-height:35px; background:#ffffff; text-align: left;}
+	.threeimg{margin-right: 8px; width:12px;margin-left: 47px;}
+	
+	
+	/*---------------选中样式----------------*/	
+	.activebd{border-right: 2px solid #0b6cbc;}	
+	.arrows{
+			border-top:12px solid transparent;
+			border-left:12px solid transparent;
+			border-right:12px solid #0b6cbc;
+			border-bottom:12px solid transparent;
+			width: 0;
+			height: 0;
+			float: right;
+			margin-top:4px;
+			margin-right: -1px;
+		}
+		
+	.arrows1{
+			border-top:12px solid transparent;
+			border-left:12px solid transparent;
+			border-right:14px solid #0b6cbc;
+			border-bottom:12px solid transparent;
+			width: 0;
+			height: 0;
+			float: right;
+			margin-top:4px;
+			margin-right: -1px;
+		}
+		
+	.bbackg{ background:#ffffff; color:#1963aa}
+	.colortxt{color:#1963aa; font-weight:bold;}
+	.colortxt1{color:#1963aa;font-weight:bold; }
+/*-------------左边菜单样式 end-------------------*/
+
+/*--------------------登录页面样式 --------------background:#003ecc;---------------*/
+.headline{color:#478fca;font-size: 18px;width: 100%;text-align: center;margin:60px 0 30px 0;}
+.widget-box{
+	border:6px solid #394557;
+	background:#f7f7f7;width: 378px;height: 348px;margin: 0 auto;
+	}
+.bdframe{padding:25px 36px 36px;}
+.manageleft{margin-right:10px}
+.header {
+	color:#393939;
+	font-size:19px;
+}
+.divhg{line-height: 50px;height: 50px;color:#393939;}
+.inputtxt{width:66%;line-height: 32px;height: 32px; padding-left: 6px;padding-right: 24px;max-height: 32px;margin-bottom: 4px;}
+.btntxt{background:#2283c5; padding: 9px 8px;color:#FFF; margin-right:5%;}
+.btnpadding{padding: 5px 14px;cursor:pointer;cursor:hand }
+.bgcolor{background: rgba(1, 96, 164 ,0.9);}
+
+.footbg{height:25px; background:#5090c1; width:100%; border-top:2px solid #394557;}
+
+.tflogo{float: left;margin-top: 8px; margin-left:130px; color:#033356;}
